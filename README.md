@@ -10,6 +10,7 @@ A sample teaching and tutoring responsive website
 ## Platform
 ### Frontend
 * HTML: Structure is based on html and html templates
+* JavaScript: used both on the client-side and server-side to make web pages interactive
 * Bootstrap: for styling the html I used bootstrap and 
 * CSS: a little bit CSS wherever bootstrap does not have desired facilities 
 
@@ -19,6 +20,7 @@ A sample teaching and tutoring responsive website
 
 ### Backend
 * Nodejs: used as server-side platform
+* JavaScript: used both on the client-side and server-side to make web pages interactive
 * Express: to provide methods, call HTTP verb ( GET , POST , SET , etc.) and URL pattern ("Route")
 * ejs: for rendering htmls 
 
