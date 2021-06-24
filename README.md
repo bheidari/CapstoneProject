@@ -14,15 +14,15 @@ A sample teaching and tutoring responsive website
 * Bootstrap: for styling the html I used bootstrap and 
 * CSS: a little bit CSS wherever bootstrap does not have desired facilities 
 
-### DB model
-* MongoDB: used for db model and design of data
-* Mongoose:  The data are modeled based on normalised db model, i.e. dividing the data into multiple collections with references between those collections and usingpopulate methods and queries accordingly
-
 ### Backend
 * Nodejs: used as server-side platform
 * JavaScript: used both on the client-side and server-side to make web pages interactive
 * Express: to provide methods, call HTTP verb ( GET , POST , SET , etc.) and URL pattern ("Route")
 * ejs: for rendering htmls 
+#### DB model
+* MongoDB: used for db model and design of data
+* Mongoose:  The data are modeled based on normalised db model, i.e. dividing the data into multiple collections with references between those collections and usingpopulate methods and queries accordingly
+
 
 ## Future Expansion
 * To add more CRUD freatures (currently the app can only add new programs, courses, applicants and applications, the rest should be implemented directly through MongoDB compass)
