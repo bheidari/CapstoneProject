@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Barsam Learning</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- import header, footer from htmlTeplates.js-->
+    <script type="text/javascript" src="js/htmlTemplates.js"></script>
+    <script>
+        window.onload = () => {
+            // $(function () {
+            // $("#header").load("http://localhost:8887/views/common/header.html");
+            // document.querySelector("header").innerHTML = '<object data="http://localhost:8887/views/common/header.html"></object>';
+            document.querySelector('header').innerHTML = header();
+            document.querySelector('footer').innerHTML = footer();
+        }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header"></header>
+    <header></header>
+
+    <!-- Navigation-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg my-0 bg-light navbar-light font-weight-bolder">
+            <a class="navbar-brand" href="/"><img class="w-25 h-25" src="img/logo.png" alt="Barsam Learning">Barsam
+                Learning</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link btn-outline-primary" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link btn-outline-primary" href="/programs">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link btn-outline-primary" href="/teachers">Teachers</a></li>
+                    <li class="nav-item"><a class="nav-link btn-outline-primary" href="/schedule">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link btn-outline-primary" href="/links">Links</a></li>
+                    <li class="nav-item"><a class="nav-link btn-outline-primary" href="/contact">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Navigation-->
+
+    <!-- Carousel -->
+    <div id="demo" class="container carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/1-shiraz.jpg" alt="Shiraz" width="1100" height="450">
+                <div class="carousel-caption">
+                    <h3>Shiraz</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/2-esfahan.jpg" alt="Esfahan" width="1100" height="450">
+                <div class="carousel-caption">
+                    <h3>Esfahan</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/3-ahwaz.jpg" alt="Ahwaz" width="1100" height="450">
+                <div class="carousel-caption">
+                    <h3>Ahwaz</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev"><span
+                class="carousel-control-prev-icon"></span></a>
+        <a class="carousel-control-next" href="#demo" data-slide="next"><span
+                class="carousel-control-next-icon"></span></a>
+    </div>
+    <br>
+    <!-- Carousel -->
+
+    <!-- Programs & Welcome -->
+    <div class="container my-3">
+        <div class="row">
+            <!-- Prorgrams -->
+            <div class="col-sm-7">
+                <!-- <div class="container mt-3"> -->
+                <h3>Programs</h3>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home">Math</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu1">Science</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu2">Computer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu3">CAD Engineering</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content" style="height: 250px; overflow-y: scroll;">
+                    <div id="home" class="container tab-pane active"><br>
+                        <h3>Math</h3>
+                        <p></p>
+                        <p>This Program enables students to consolidate an understanding of mathematical concepts related
+                            to number sense and operations, algebra, measurement, geometry, probability, etc. </p>
+                        <h5>Key Features:</h5>
+                        <ul>
+                            <li>All curriculum areas from Grades 7 through 12</li>
+                            <li> Covers the objectives of the Western and Northern Canadian Protocol’s (WNCP) Common
+                                Curriculum Framework</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
+                        </ul>
+                    </div>
+                    <div id="menu1" class="container tab-pane fade"><br>
+                        <h3>Science</h3>
+                        <p>The science program strives to provide students with experience in making informed decisions,
+                            through the analysis of both qualitative and quantitative data.
+                        <h5>Key Features:</h5>
+                        <ul>
+                            <li>All curriculum areas from Grades 7 through 12</li>
+                            <li> Covers the objectives of the Western and Northern Canadian Protocol’s (WNCP) Common
+                                Curriculum Framework</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
+                        </ul>
+                    </div>
+                    <div id="menu2" class="container tab-pane fade"><br>
+                        <h3>Computer</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</p>
+                        <h5>Key Features:</h5>
+                        <ul>
+                            <li>All curriculum areas from Grades 7 through 12</li>
+                            <li> Covers the objectives of the Western and Northern Canadian Protocol’s (WNCP) Common
+                                Curriculum Framework</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
+                        </ul>
+                    </div>
+                    <div id="menu3" class="container tab-pane fade"><br>
+                        <h3>CAD Engineering</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</p>
+                        <h5>Key Features:</h5>
+                        <ul>
+                            <li>All curriculum areas from Grades 7 through 12</li>
+                            <li> Covers the objectives of the Western and Northern Canadian Protocol’s (WNCP) Common
+                                Curriculum Framework</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+
+                </div>
+                <br>
+
+            </div>
+
+            <!-- Welcome -->
+            <div class="col-sm-5">
+                <h3>Welcome to Barsam Learning</h3>
+                <div style="height: 300px; overflow-y: scroll;" id="welcome">
+                    <dl>
+                        <dt>Lorem ipsum dolor</dt>
+                        <dd>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</dd>
+                        <dd>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</dd>
+                        <dd>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</dd>
+
+                        <dd>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</dd>
+                    </dl>
+                    </dl>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <!-- Programs & Welcome -->
+
+    <!-- Teachers Card Slider -->
+    <div class="container border">
+        <!--Carousel Wrapper-->
+        <div class="row mt-3">
+            <div class="col-6">
+                <h3 class="mb-3">Teachers </h3>
+            </div>
+            <div class="col-6 text-right">
+                <a class="btn-sm btn-primary mb-3 mr-1" href="#multi-item" role="button"
+                    data-slide="prev"><span>&#60;</span></a>
+                <a class="btn-sm btn-primary mb-3 " href="#multi-item" role="button"
+                    data-slide="next"><span>&#62;</span></a>
+            </div>
+
+            <div id="multi-item" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                <!--Slides-->
+                <div class="carousel-inner w-400 h-300" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
+                        <div class="col-md-4" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top mx-auto d-block" style="width:50%" src="img/teacher-m1.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">- Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top mx-auto d-block" style="width:50%" src="img/teacher-f1.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">- Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" style="float:left">
+                            <div class="card mb-2">
+                                <img class="card-img-top mx-auto d-block" style="width:50%" src="img/teacher-m2.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">- Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                        <div class="col-md-4" style="float:left;">
+                            <div class="card mb-2">
+                                <img class="card-img-top mx-auto d-block" style="width:50%" src="img/teacher-f2.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">- Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" style="float:left;">
+                            <div class="card mb-2">
+                                <img class="card-img-top mx-auto d-block" style="width:50%" src="img/teacher-m3.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">- Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" style="float:left;">
+                            <div class="card mb-2">
+                                <img class="card-img-top mx-auto d-block" style="width:50%" src="img/teacher-f3.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">- Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.Second slide-->
+
+
+
+                </div>
+                <!-- <div class="container text-center">
+                    <a class="btn-sm btn-primary" href="teachers.html">More Info</a>
+                </div> -->
+            </div>
+            <!--/.Slides-->
+            <br>
+        </div>
+    </div>
+    <br>
+    <!-- Teachers Card Slider -->
+
+    <!-- Page Footer -->
+    <footer></footer>
+
+</html>

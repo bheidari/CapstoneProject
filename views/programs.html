@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Barsam Learning</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- import header, footer from htmlTeplates.js-->
+    <script type="text/javascript" src="js/htmlTemplates.js"></script>
+    <script type="text/javascript" src="js/allPrograms-submit.js"></script>
+    <script>
+        window.onload = () => {
+            // $(function () {
+            // $("header").load("http://localhost:8887/views/common/header.html");
+            // document.querySelector("header").innerHTML = '<object data="http://localhost:8887/views/common/header.html"></object>';
+            document.querySelector('header').innerHTML = header();
+            document.querySelector('footer').innerHTML = footer();
+            retriveProgramsInProgramHTML();
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header></header>
+
+    <!-- Navigation-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg my-0 bg-light navbar-light font-weight-bolder">
+            <a class="navbar-brand" href="/"><img class="w-25 h-25" src="img/logo.png" alt="Barsam Learning">Barsam
+                Learning</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link btn-outline-primary" href="/">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link btn-outline-primary" href="/programs">Programs</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link btn-outline-primary" href="/teachers">Teachers</a></li>
+                    <li class="nav-item"><a class="nav-link btn-outline-primary" href="/schedule">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link btn-outline-primary" href="/links">Links</a></li>
+                    <li class="nav-item"><a class="nav-link btn-outline-primary" href="/contact">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Navigation-->
+
+    <!-- Pagination -->
+    <div class="container p-0">
+        <a class="btn btn-link" href="/">Home</a><span>></span>
+        <a class="btn btn-link disabled" href="/programs">Programss</a>
+    </div>
+    <!-- Pagination -->
+
+    <!-- Programs jumbotron-->
+    <div class="container">
+        <div class="jumbotron" id="jumbo-programs">
+            <h3>Our Programs</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+
+    <!-- Programs Cards-->
+    <div class="container border" style="height: 700px; overflow-y: scroll;" id="cardId">
+        <!-- <div class="row mt-3">
+            <div class="col-md-4" style="float:left">
+                <div class="card mb-2">
+                    <img class="card-img-top mx-auto d-block" style="width:100%" src="img/c1-math.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Math</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up
+                            the
+                            bulk of the
+                            card's content.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" style="float:left">
+                <div class="card mb-2">
+                    <img class="card-img-top mx-auto d-block" style="width:100%" src="img/c2-science.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Science</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up
+                            the
+                            bulk of the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" style="float:left">
+                <div class="card mb-2">
+                    <img class="card-img-top mx-auto d-block" style="width:100%" src="img/c3-computer.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Computer</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up
+                            the
+                            bulk of the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-4" style="float:left;">
+                <div class="card mb-2">
+                    <img class="card-img-top mx-auto d-block" style="width:100%" src="img/c4-cad.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">CAD Engineering</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up
+                            the
+                            bulk of the
+                            card's content.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" style="float:left;">
+            </div>
+
+            <div class="col-md-4" style="float:left;">
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Page Footer -->
+    <footer></footer>
+    <br>
+
+</body>
+
+</html>
