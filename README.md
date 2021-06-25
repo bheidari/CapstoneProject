@@ -25,6 +25,6 @@ A sample teaching and tutoring responsive website
 
 
 ## Future Expansion
-* To add more CRUD features (currently the app can only add new programs, courses, applicants and applications, the rest should be implemented directly through MongoDB compass)
-* Add a teacher CRUD form (currently teacher data are static)
+* To add more CRUD features to programs, courses, applicants and applications
+* Add a teacher CRUD form (currently teacher's data are static)
 * Add various reports using Mongoos's aggregate and populate methods and features
